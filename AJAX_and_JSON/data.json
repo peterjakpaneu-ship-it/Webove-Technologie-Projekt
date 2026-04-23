@@ -1,0 +1,47 @@
+{
+  "destinations": [
+    {
+      "continent": "Europe",
+      "countries": [
+        {
+          "name": "France",
+          "cities": [
+            { "city": "Paris", "price": 300 },
+            { "city": "Nice", "price": 250 }
+          ]
+        },
+        {
+          "name": "Slovakia",
+          "cities": [
+            { "city": "Bratislava", "price": 500 },
+            { "city": "Kosice", "price": 300 },
+            { "city": "Orava", "price": 250 }
+          ]
+        }
+      ]
+    },
+    {
+      "continent": "Asia",
+      "countries": [
+        {
+          "name": "Japan",
+          "cities": [
+            { "city": "Tokyo", "price": 400 },
+            { "city": "Osaka", "price": 300 }
+          ]
+        }
+      ]
+    },
+    {
+      "continent": "America",
+      "countries": [
+        {
+          "name": "NewYork state",
+          "cities": [
+            { "city": "NewYork", "price": 100 }
+          ]
+        }
+      ]
+    }
+  ]
+}
