@@ -1,0 +1,67 @@
+
+
+/* ##########################################*/
+/**/
+/* Styles.css contain general css styles for classes that are used on multiple websites */
+/**/
+/* ##########################################*/
+
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+header {
+    background: #2c84be;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+/* NAV BAR CSS */
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; /* important for smooth scaling */
+    transition: transform 0.2s ease;
+}
+nav a:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* CONTENT CONTAINER CSS */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+/* FOOTER CSS */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+.phone {
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.9;
+}
