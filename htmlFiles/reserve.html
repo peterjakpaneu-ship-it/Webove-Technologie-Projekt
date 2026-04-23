@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Portal - Contact</title>
+
+  <link rel="stylesheet" href="/cssFiles/styles.css">
+
+  <style>
+
+    form {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+    }
+
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+    .inputContainer{
+      margin: 5%;
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="reserve.html">Reserve a Trip</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 style="text-align:center;">Get in touch</h2>
+
+    <form id="contactForm">
+      <!-- Text input -->
+      <div class="inputContainer">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+      </div>
+
+      <!-- Email input -->
+      <div class="inputContainer">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <!-- Radio buttons -->
+      <div class="inputContainer">
+        <label>Preferred Destination:</label><br>
+        <input type="radio" name="destination" value="Europe"> Europe
+        <input type="radio" name="destination" value="Asia"> Asia
+        <input type="radio" name="destination" value="America"> America
+      </div>
+
+      <!-- Textarea -->
+      <div class="inputContainer">
+        <label>Message:</label>
+        <textarea name="message" rows="4"></textarea>
+      </div>
+
+      <!-- Date input -->
+      <div class="inputContainer">
+        <label>Travel Date:</label>
+        <input type="date" name="travel-date">
+      </div>
+
+      <!-- Checkbox -->
+      <div class="inputContainer">
+        <label style="display: flex; justify-content: center; align-items: center;"> <!-- Ik style="..." is not ideal but its fitting for this problem -->
+          <div style="border: solid">
+            <input type="checkbox" name="newsletter">
+            <span>Accept Cookies</span>
+          </div>
+        </label>
+      </div>
+
+      <button type="submit">Send</button>
+
+    </form>
+  </div>
+
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+      // get values
+      const name = document.querySelector('input[name="name"]').value.trim();
+      const email = document.querySelector('input[name="email"]').value.trim();
+      const message = document.querySelector('textarea[name="message"]').value.trim();
+      const date = document.querySelector('input[name="travel-date"]').value;
+      const destination = document.querySelector('input[name="destination"]:checked');
+      const cookies = document.querySelector('input[name="newsletter"]').checked;
+
+      // regex
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      // validation
+      if (name === "") {
+        alert("Please enter your name");
+        event.preventDefault();
+        return;
+      }
+
+      if (name.length < 2) {
+        alert("Name must be at least 2 characters");
+        event.preventDefault();
+        return;
+      }
+
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email");
+        event.preventDefault();
+        return;
+      }
+
+      if (!destination) {
+        alert("Please select a destination");
+        event.preventDefault();
+        return;
+      }
+
+      if (message === "") {
+        alert("Please enter a message");
+        event.preventDefault();
+        return;
+      }
+
+      if (date === "") {
+        alert("Please select a travel date");
+        event.preventDefault();
+        return;
+      }
+
+      if (!cookies) {
+        alert("You must accept cookies");
+        event.preventDefault();
+        return;
+      }
+
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Travel Portal</p>
+    <p class="phone"> Tel: 00522542968</p>
+  </footer>
+
+</body>
+</html>
