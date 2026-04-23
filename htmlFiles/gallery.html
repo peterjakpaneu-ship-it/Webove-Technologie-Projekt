@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Portal - Gallery</title>
+
+  <link rel="stylesheet" href="/cssFiles/styles.css">
+
+  <!-- lightbox to preview imgs -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+
+  <style>
+    .placeholder {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+  </style>
+
+</head>
+
+
+
+<body>
+
+  <header>
+    <h1>Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="reserve.html">Reserve a Trip</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="gallery">
+
+      <a href="../images/image1.png" data-lightbox="travel">
+        <img src="../images/image1.png">
+      </a>
+      <a href="../images/image2.png" data-lightbox="travel">
+        <img src="../images/image2.png">
+      </a>
+      <a href="../images/image3.png" data-lightbox="travel">
+        <img src="../images/image3.png">
+      </a>
+      <a href="../images/image4.png" data-lightbox="travel">
+        <img src="../images/image4.png">
+      </a>
+      <a href="../images/image5.png" data-lightbox="travel">
+        <img src="../images/image5.png">
+      </a>
+      <a href="../images/image6.png" data-lightbox="travel">
+        <img src="../images/image6.png">
+      </a>
+      <a href="../images/image7.png" data-lightbox="travel">
+        <img src="../images/image7.png">
+      </a>
+      <a href="../images/image8.png" data-lightbox="travel">
+        <img src="../images/image8.png">
+      </a>
+      <a href="../images/image9.png" data-lightbox="travel">
+        <img src="../images/image9.png">
+      </a>
+      <a href="../images/image10.png" data-lightbox="travel">
+        <img src="../images/image10.png">
+      </a>
+
+      <a href="../images/image1.png" data-lightbox="travel">
+        <img src="../images/image1.png">
+      </a>
+      <a href="../images/image2.png" data-lightbox="travel">
+        <img src="../images/image2.png">
+      </a>
+      <a href="../images/image3.png" data-lightbox="travel">
+        <img src="../images/image3.png">
+      </a>
+      <a href="../images/image4.png" data-lightbox="travel">
+        <img src="../images/image4.png">
+      </a>
+      <a href="../images/image5.png" data-lightbox="travel">
+        <img src="../images/image5.png">
+      </a>
+      <a href="../images/image6.png" data-lightbox="travel">
+        <img src="../images/image6.png">
+      </a>
+      <a href="../images/image7.png" data-lightbox="travel">
+        <img src="../images/image7.png">
+      </a>
+      <a href="../images/image8.png" data-lightbox="travel">
+        <img src="../images/image8.png">
+      </a>
+      <a href="../images/image9.png" data-lightbox="travel">
+        <img src="../images/image9.png">
+      </a>
+      <a href="../images/image10.png" data-lightbox="travel">
+        <img src="../images/image10.png">
+      </a>
+
+      <a href="../images/image1.png" data-lightbox="travel">
+        <img src="../images/image1.png">
+      </a>
+      <a href="../images/image2.png" data-lightbox="travel">
+        <img src="../images/image2.png">
+      </a>
+      <a href="../images/image3.png" data-lightbox="travel">
+        <img src="../images/image3.png">
+      </a>
+      <a href="../images/image4.png" data-lightbox="travel">
+        <img src="../images/image4.png">
+      </a>
+      <a href="../images/image5.png" data-lightbox="travel">
+        <img src="../images/image5.png">
+      </a>
+      <a href="../images/image6.png" data-lightbox="travel">
+        <img src="../images/image6.png">
+      </a>
+      <a href="../images/image7.png" data-lightbox="travel">
+        <img src="../images/image7.png">
+      </a>
+      <a href="../images/image8.png" data-lightbox="travel">
+        <img src="../images/image8.png">
+      </a>
+      <a href="../images/image9.png" data-lightbox="travel">
+        <img src="../images/image9.png">
+      </a>
+      <a href="../images/image10.png" data-lightbox="travel">
+        <img src="../images/image10.png">
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Travel Portal</p>
+    <p class="phone"> Tel: 00522542968</p>
+  </footer>
+
+
+  <!-- Light box needs jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- lightbox to preview imgs -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+</body>
+</html>
