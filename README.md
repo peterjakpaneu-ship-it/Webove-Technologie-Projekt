@@ -2,7 +2,7 @@
 
 How to run:
 1. Open project in WebStorm
-Right-click on index.html (in htmlFiles folder)
-Click "Open in Browser"
+2. Right-click on index.html (in htmlFiles folder)
+3. Click "Open in Browser"
 
 
